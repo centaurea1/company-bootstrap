@@ -1,0 +1,15 @@
+.object {
+    float: left;
+}
+
+.main {
+    float: right;
+}
+
+.news {
+    clear: both;
+}
+
+.news .card {
+    display: inline-block;
+}
