@@ -1,15 +1,53 @@
+.header .dropdown-toggle {
+    border-radius: 30px;
+    border: 1px solid #cccccc;
+}
+
+.object .list-group li {
+    border: none;
+}
+
 .object {
     float: left;
+    margin-right: 20px;
 }
 
 .main {
-    float: right;
+    clear: both;
 }
 
 .news {
     clear: both;
 }
 
+.main .object .card {
+    border: none;
+}
+
+.main .object .card-text {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main .general .card .date {
+    display: inline-block;
+}
+
+.news {
+    background: #cccccc;
+}
+
 .news .card {
     display: inline-block;
+    background: none;
+    border: none;
+}
+
+.footer .contacts {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer {
+    clear: both;
 }
