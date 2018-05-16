@@ -51,3 +51,30 @@
 .footer {
     clear: both;
 }
+
+.footer .contacts .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../image/sprite-footer.png') no-repeat;
+}
+
+.footer .contacts .fb {
+    background-position: 0 0;
+}
+
+.footer .contacts .vk {
+    background-position: 25% 0;
+}
+
+.footer .contacts .inst {
+    background-position: 50% 0;
+}
+
+.footer .contacts .ok {
+    background-position: 75% 0;
+}
+
+.footer .contacts .you {
+    background-position: 100% 0;
+}
