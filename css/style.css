@@ -1,15 +1,20 @@
+.header .navbar {
+    padding: 0 40px;
+}
+
+.header .navbar .lead {
+    margin-right: 20px;
+}
+
 .header .dropdown-toggle {
     border-radius: 30px;
     border: 1px solid #cccccc;
 }
 
-.object .list-group li {
-    border: none;
-}
-
-.object {
-    float: left;
-    margin-right: 20px;
+.main .object .name,
+.object .subname {
+    margin-bottom: 0;
+    padding-top: 5px;
 }
 
 .main {
@@ -25,12 +30,41 @@
 }
 
 .main .object .card-text {
-    display: inline-block;
     margin-right: 20px;
 }
 
-.main .general .card .date {
+.main .object .list-group li {
+    border: none;
+}
+
+.main .object {
+    margin-right: 20px;
+    position: relative;
+    top: -70px;
+}
+
+.main .object .list-group {
+    margin-top: 40px;
+}
+
+.main .general .title {
+    padding-top: 40px;
+}
+
+.main .general .card {
+    min-height: 120px;
+    max-height: 100%;
+    margin-bottom: 20px;
+}
+
+.main .general .date {
     display: inline-block;
+    margin-bottom: 10px;
+}
+
+.main .general .more {
+    width: 20px;
+    height: 20px;
 }
 
 .news {
@@ -38,18 +72,21 @@
 }
 
 .news .card {
-    display: inline-block;
     background: none;
     border: none;
 }
 
 .footer .contacts {
-    float: left;
     margin-right: 20px;
 }
 
 .footer {
     clear: both;
+    padding-top: 40px;
+}
+
+.footer .social-icon {
+    margin-bottom: 20px;
 }
 
 .footer .contacts .icon {
@@ -77,4 +114,18 @@
 
 .footer .contacts .you {
     background-position: 100% 0;
+}
+
+.footer .nav th,
+.footer .nav td {
+    border: none;
+    padding: 0;
+}
+
+.footer .adress .lead {
+    margin-bottom: 10px;
+}
+
+.footer .adress .small {
+    margin: 0;
 }
