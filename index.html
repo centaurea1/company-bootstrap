@@ -151,7 +151,7 @@
         </div>
     </section>
 
-    <section class="news container-fluid d-flex justify-content-center">
+    <section class="news container-fluid d-flex justify-content-center d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
         <div class="overflow row d-flex flex-nowrap">
             <div class="card d-inline-block" style="width: 18rem;">
                 <div class="card-body">
@@ -184,6 +184,55 @@
         </div>
     </section>
 
+    <section class="news-small-size container-fluid d-flex justify-content-center d-block d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card d-inline-block w-100">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block text-muted">14/07</h5>
+                            <div class="background align-middle"></div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card d-inline-block w-100">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block text-muted">14/07</h5>
+                            <div class="background align-middle"></div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card d-inline-block w-100">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block text-muted">14/07</h5>
+                            <div class="background align-middle"></div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card d-inline-block w-100">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline-block text-muted">14/07</h5>
+                            <div class="background align-middle"></div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer container">
         <div class="row">
             <aside class="contacts col-xl-3 col-md-3">
@@ -200,79 +249,123 @@
                     <p class="small">post@comp.com</p>
                 </div>
             </aside>
-            <section class="nav col-xl-8 col-md-8">
+            <section class="nav col-xl-8 col-md-8 d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
                 <div class="col-xl-12">
-                <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №1</p>
-                <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №2</p>
-                <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №3</p>
-            </div>
-            <div class="col-xl-12">
-                <ul class="list-group list-unstyled d-inline-block align-top col-xl-3">
-                    <li>
-                        <a href="#">Подраздел №1</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №2</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №3</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №4</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №5</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №6</a>
-                    </li>
-                </ul>
-                <ul class="list-group list-unstyled d-inline-block align-top col-xl-3">
-                    <li>
-                        <a href="#">Подраздел №1</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №2</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №3</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №4</a>
-                    </li>
-                </ul>
-                <ul class="list-group list-unstyled d-inline-block align-top col-xl-3">
-                    <li>
-                        <a href="#">Подраздел №1</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №2</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №3</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №4</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №5</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №6</a>
-                    </li>
-                </ul>
-                <ul class="list-group list-unstyled d-inline-block align-top col-xl-3">
-                    <li>
-                        <a href="#">Подраздел №1</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №2</a>
-                    </li>
-                    <li>
-                        <a href="#">Подраздел №3</a>
-                    </li>
-                </ul>
-            </div>
+                    <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №1</p>
+                    <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №2</p>
+                    <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №3</p>
+                </div>
+                <div class="col-xl-12">
+                    <ul class="list-group list-unstyled d-inline-block align-top col-xl-3">
+                        <li>
+                            <a href="#">Подраздел №1</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №2</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №3</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №4</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №5</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №6</a>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-unstyled d-inline-block align-top col-xl-3">
+                        <li>
+                            <a href="#">Подраздел №1</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №2</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №3</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №4</a>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-unstyled d-inline-block align-top col-xl-3">
+                        <li>
+                            <a href="#">Подраздел №1</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №2</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №3</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №4</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №5</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №6</a>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-unstyled d-inline-block align-top col-xl-3">
+                        <li>
+                            <a href="#">Подраздел №1</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №2</a>
+                        </li>
+                        <li>
+                            <a href="#">Подраздел №3</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="nav-small-size d-block d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Раздел №1
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Подраздел №1</a>
+                        <a class="dropdown-item" href="#">Подраздел №2</a>
+                        <a class="dropdown-item" href="#">Подраздел №3</a>
+                        <a class="dropdown-item" href="#">Подраздел №4</a>
+                        <a class="dropdown-item" href="#">Подраздел №5</a>
+                        <a class="dropdown-item" href="#">Подраздел №6</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Раздел №2
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Подраздел №1</a>
+                        <a class="dropdown-item" href="#">Подраздел №2</a>
+                        <a class="dropdown-item" href="#">Подраздел №3</a>
+                        <a class="dropdown-item" href="#">Подраздел №4</a>
+                        <a class="dropdown-item" href="#">Подраздел №5</a>
+                        <a class="dropdown-item" href="#">Подраздел №6</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-white text-dark border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Раздел №3
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Подраздел №1</a>
+                        <a class="dropdown-item" href="#">Подраздел №2</a>
+                        <a class="dropdown-item" href="#">Подраздел №3</a>
+                        <a class="dropdown-item" href="#">Подраздел №4</a>
+                        <a class="dropdown-item" href="#">Подраздел №5</a>
+                        <a class="dropdown-item" href="#">Подраздел №6</a>
+                    </div>
+                </div>
             </section>
         </div>
     </footer>

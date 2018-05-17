@@ -62,7 +62,7 @@
     height: 20px;
 }
 
-.news {
+.news, .news-small-size {
     background: #cccccc;
     clear: both;
 }
@@ -71,12 +71,14 @@
     overflow: hidden;
 }
 
-.news .card {
+.news .card,
+.news-small-size .card {
     background: none;
     border: none;
 }
 
-.news .card .background {
+.news .card .background,
+.news-small-size .card .background {
     display: inline-block;
     width: 70px;
     height: 20px;
@@ -90,6 +92,7 @@
 .footer {
     clear: both;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .footer .social-icon {
@@ -134,4 +137,12 @@
 
 .footer .adress .small {
     margin: 0;
+}
+
+.footer .nav-small-size {
+    padding-top: 20px;
+}
+
+.footer .nav-small-size .dropdown {
+    border-bottom: 1px solid #cccccc;
 }
