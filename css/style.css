@@ -21,10 +21,6 @@
     clear: both;
 }
 
-.news {
-    clear: both;
-}
-
 .main .object .card {
     border: none;
 }
@@ -38,7 +34,6 @@
 }
 
 .main .object {
-    margin-right: 20px;
     position: relative;
     top: -70px;
 }
@@ -69,11 +64,23 @@
 
 .news {
     background: #cccccc;
+    clear: both;
+}
+
+.news .overflow {
+    overflow: hidden;
 }
 
 .news .card {
     background: none;
     border: none;
+}
+
+.news .card .background {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    background: url('../image/green.png') no-repeat;
 }
 
 .footer .contacts {
@@ -116,9 +123,8 @@
     background-position: 100% 0;
 }
 
-.footer .nav th,
-.footer .nav td {
-    border: none;
+.footer .nav .list-group,
+.footer .nav .title {
     padding: 0;
 }
 
