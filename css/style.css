@@ -146,3 +146,8 @@
 .footer .nav-small-size .dropdown {
     border-bottom: 1px solid #cccccc;
 }
+
+.icon {
+    width: 16px;
+    height: 16px;
+  }
