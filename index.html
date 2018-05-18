@@ -19,13 +19,17 @@
                 <a class="navbar-brand" href="#">
                     <img src="image/logo-company.png" alt="company">
                 </a>
+                <div class="d-block d-sm-flex d-md-flex d-lg-none d-xl-none">
+                        <p class="lead mr-4 d-inline-block mt-3">+7 000 000-00-00</p>
+                        <h1 class="text-hide d-inline-block mt-2" style="background-image: url('image/icon-phone.png'); background-repeat: no-repeat; width: 60px; height: 60px;">Bootstrap</h1>
+                    </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ">
-                        <li class="nav-item active">
+                        <li class="nav-item active pt-2 pt-sm-2 pt-md-2 pt-lg-0 pt-xl-0">
                             <a class="nav-link" href="#">Раздел №1
                                 <span class="sr-only">(current)</span>
                             </a>
@@ -45,9 +49,9 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link" href="#">
+                            <a class="nav-link pt-5 pt-sm-5 pt-md-5 pt-lg-0 pt-xl-0 mt-2" href="#">
                                 <span class="oi text-dark" data-glyph="list">
-                                    <span class="badge badge-danger badge-pill">3</span>
+                                    <span class="header-notice badge badge-danger badge-pill">3</span>
                                 </span>
                                 Сравнение
                             </a>
@@ -66,13 +70,22 @@
                                 </div>
                             </div>
                         </li>
+
+                        <li class="nav-item pt-2 pt-sm-2 pt-md-2 pt-lg-0 pt-xl-0">
+                            <div class="d-flex d-sm-flex d-md-flex d-lg-none d-xl-none">
+                                <p class="lead mr-4 d-block mt-3">+7 000 000-00-00</p>
+                                <h1 class="text-hide d-inline-block mt-2" style="background-image: url('image/icon-phone.png'); background-repeat: no-repeat; width: 60px; height: 60px;">Bootstrap</h1>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <p class="lead mr-4">+7 000 000-00-00</p>
-                <h1 class="text-hide" style="background-image: url('image/icon-phone.png'); background-repeat: no-repeat; width: 60px; height: 60px;">Bootstrap</h1>
+                <div class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex flex-nowrap">
+                    <p class="lead mr-4 d-inline-block mt-3">+7 000 000-00-00</p>
+                    <h1 class="text-hide d-inline-block mt-2" style="background-image: url('image/icon-phone.png'); background-repeat: no-repeat; width: 60px; height: 60px;">Bootstrap</h1>
+                </div>
             </nav>
             <img src="image/banner.jpg" class="img-fluid position-relative" alt="Responsive image">
-            <div class="position-absolute d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
+            <div class="position-absolute d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block pt-lg-3 pt-xl-0">
                 <p class="subname bg-white text-dark w-50 text-center my-0">Адрес 123</p>
                 <h1 class="name bg-white text-dark text-center my-0">Объект №51</h1>
             </div>
@@ -101,8 +114,9 @@
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <a href="#">Инструкция</a>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item d-flex justify-content-between align-items-center active bg-white border">
                         <a href="#">Уведомления</a>
+                        <span class="notice badge badge-danger badge-pill">6</span>
                     </li>
                 </ul>
                 <div class="card" style="width: 18rem;">
@@ -128,20 +142,22 @@
             </aside>
             <aside class="object-small-size d-block d-xs-block d-sm-block d-md-block d-lg-none d-xl-none col-12">
                 <div class="row">
-                        <div class="dropdown show col-12 pt-5">
-                                <a class="btn btn-secondary dropdown-toggle col-12" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Уведомления
-                                </a>
-                              
-                                <div class="dropdown-menu col-12" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item col-12" href="#">Документы</a>
-                                  <a class="dropdown-item col-12" href="#">План</a>
-                                  <a class="dropdown-item col-12" href="#">Оплата</a>
-                                  <a class="dropdown-item col-12" href="#">Стадии</a>
-                                  <a class="dropdown-item col-12" href="#">Online</a>
-                                  <a class="dropdown-item col-12" href="#">Инструкция</a>
-                                </div>
-                              </div>
+                    <div class="dropdown show col-12 pt-5">
+                        <a class="btn btn-secondary dropdown-toggle col-12 text-left bg-white text-dark" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Уведомления
+                            <span class="notice badge badge-danger badge-pill">6</span>
+                        </a>
+
+                        <div class="dropdown-menu col-12" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item col-12" href="#">Документы</a>
+                            <a class="dropdown-item col-12" href="#">План</a>
+                            <a class="dropdown-item col-12" href="#">Оплата</a>
+                            <a class="dropdown-item col-12" href="#">Стадии</a>
+                            <a class="dropdown-item col-12" href="#">Online</a>
+                            <a class="dropdown-item col-12" href="#">Инструкция</a>
+                        </div>
+                    </div>
                     <div class="card border-0 col-6" style="width: 18rem;">
                         <div class="card-body row">
                             <h5 class="card-title col-12">Адрес 123</h5>
@@ -169,10 +185,11 @@
                 <div class="card d-flex">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">"Вращательный экваториальный момент — актуальная национальная задача"
-                            <span class="badge" data-toggle="collapse" data-target="#first-info">
+                        <p class="font-weight-bold">
+                            <span class="badge float-right" data-toggle="collapse" data-target="#first-info">
                                 <img class="more" src="image/show-arrow.png" alt="more">
                             </span>
+                            "Вращательный экваториальный момент — актуальная национальная задача"
                         </p>
                         <p class="collapse" id="first-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
                             региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
@@ -186,10 +203,11 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">Реальная власть как концепция
-                            <span class="badge" data-toggle="collapse" data-target="#second-info">
+                        <p class="font-weight-bold">
+                            <span class="badge float-right" data-toggle="collapse" data-target="#second-info">
                                 <img class="more" src="image/show-arrow.png" alt="more">
                             </span>
+                            Реальная власть как концепция
                         </p>
                         <p class="collapse" id="second-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
                             региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
@@ -203,10 +221,11 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">Из ряда вон выходящий математический маятник: гипотеза и теории
-                            <span class="badge" data-toggle="collapse" data-target="#third-info">
+                        <p class="font-weight-bold">
+                            <span class="badge float-right" data-toggle="collapse" data-target="#third-info">
                                 <img class="more" src="image/show-arrow.png" alt="more">
                             </span>
+                            Из ряда вон выходящий математический маятник: гипотеза и теории
                         </p>
                         <p class="collapse" id="third-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
                             региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
@@ -220,10 +239,11 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">Межпланетный знак: методология и особенности
-                            <span class="badge" data-toggle="collapse" data-target="#fourth-info">
+                        <p class="font-weight-bold">
+                            <span class="badge float-right" data-toggle="collapse" data-target="#fourth-info">
                                 <img class="more" src="image/show-arrow.png" alt="more">
                             </span>
+                            Межпланетный знак: методология и особенности
                         </p>
                         <p class="collapse" id="fourth-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
                             региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
@@ -237,10 +257,11 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">Юрский маховик: ядро или засветка неба?
-                            <span class="badge" data-toggle="collapse" data-target="#fifth-info">
+                        <p class="font-weight-bold">
+                            <span class="badge float-right" data-toggle="collapse" data-target="#fifth-info">
                                 <img class="more" src="image/show-arrow.png" alt="more">
                             </span>
+                            Юрский маховик: ядро или засветка неба?
                         </p>
                         <p class="collapse" id="fifth-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
                             региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
@@ -418,7 +439,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="col-xl-3 col-lg-3 col-md-6 pt-4">
                         <ul class="list-group list-unstyled d-inline-block mt-3">
                             <li>
                                 <a href="#">Подраздел №1</a>
@@ -436,7 +457,7 @@
             <section class="nav-small-size d-block d-xs-block d-sm-block d-md-none d-lg-none d-xl-none col-12">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between align-items-center pl-0 pr-0">
-                        Cras justo odio
+                        Раздел №1
                         <span class="oi" data-glyph="chevron-bottom" data-toggle="collapse" data-target="#first-section"></span>
                         <ul class="subsection collapse list-unstyled" id="first-section">
                             <li>
@@ -460,7 +481,7 @@
                         </ul>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center pl-0 pr-0">
-                        Dapibus ac facilisis in
+                        Раздел №2
                         <span class="oi" data-glyph="chevron-bottom" data-toggle="collapse" data-target="#second-section"></span>
                         <ul class="subsection collapse list-unstyled" id="second-section">
                             <li>
@@ -478,7 +499,7 @@
                         </ul>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center pl-0 pr-0">
-                        Morbi leo risus
+                        Раздел №3
                         <span class="oi" data-glyph="chevron-bottom" data-toggle="collapse" data-target="#third-section"></span>
                         <ul class="subsection collapse list-unstyled" id="third-section">
                             <li>

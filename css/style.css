@@ -7,11 +7,15 @@ body {
 }
 
 .header .navbar-nav .nav-link {
-    font-size: 14px;
+    font-size: 12px;
     color: #893b67;
 }
 
-.header .navbar .badge-danger {
+.header .navbar-brand img {
+    width: 100px;
+}
+
+.badge-danger {
     background: #893b67;
 }
 
@@ -22,11 +26,6 @@ body {
 .header .dropdown-toggle {
     border-radius: 30px;
     border: 1px solid #cccccc;
-}
-
-.header .position-absolute {
-    bottom: 0;
-    left: 0;
 }
 
 .main .object .name,
@@ -197,4 +196,10 @@ body {
 .icon {
     width: 16px;
     height: 16px;
+  }
+
+  .position-absolute {
+      height: 100px;
+      top: 240px;
+      left: 100px;
   }
