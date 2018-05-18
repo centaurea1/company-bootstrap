@@ -16,7 +16,9 @@
     <header class="header container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light col-12">
-                <a class="navbar-brand" href="#">Company</a>
+                <a class="navbar-brand" href="#">
+                    <img src="image/logo-company.png" alt="company">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,14 +39,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Раздел №4</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-5">
                             <a class="nav-link" href="#">Раздел №5</a>
                         </li>
 
                         <li class="nav-item">
 
                             <a class="nav-link" href="#">
-                                <span class="oi" data-glyph="list">
+                                <span class="oi text-dark" data-glyph="list">
                                     <span class="badge badge-danger badge-pill">3</span>
                                 </span>
                                 Сравнение
@@ -66,19 +68,21 @@
                         </li>
                     </ul>
                 </div>
-                <p class="lead">+7 000 000-00-00</p>
-                <h1 class="text-hide" style="background-image: url('image/heart.svg'); width: 50px; height: 50px;">Bootstrap</h1>
+                <p class="lead mr-4">+7 000 000-00-00</p>
+                <h1 class="text-hide" style="background-image: url('image/icon-phone.png'); background-repeat: no-repeat; width: 60px; height: 60px;">Bootstrap</h1>
             </nav>
-            <img src="image/banner.jpg" class="img-fluid" alt="Responsive image">
+            <img src="image/banner.jpg" class="img-fluid position-relative" alt="Responsive image">
+            <div class="position-absolute d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
+                <p class="subname bg-white text-dark w-50 text-center my-0">Адрес 123</p>
+                <h1 class="name bg-white text-dark text-center my-0">Объект №51</h1>
+            </div>
         </div>
     </header>
 
     <section class="main container d-block mx-auto">
         <div class="row">
-            <aside class="object col-xl-3">
-                <p class="subname bg-white text-dark d-none d-xs-none d-sm-none d-md-inline-block d-lg-inline-block d-xl-block">Адрес 123</p>
-                <h1 class="name bg-white text-dark d-none d-xs-none d-sm-none d-md-inline-block d-lg-inline-block d-xl-block">Объект №51</h1>
-                <ul class="list-group d-none d-xs-none d-sm-none d-xl-block">
+            <aside class="object col-xl-3 col-lg-4 d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block">
+                <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <a href="#">Документы</a>
                     </li>
@@ -102,91 +106,183 @@
                     </li>
                 </ul>
                 <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Адрес 123</h5>
-                        <p class="card-text d-inline-block">Адрес 123</p>
-                        <a href="#" class="card-link small">Перейти</a>
+                    <div class="card-body row">
+                        <h5 class="card-title col-12">Адрес 123</h5>
+                        <p class="card-text col-5 pr-0 mr-0">Адрес 123</p>
+                        <a href="#" class="card-link small col-6">
+                            Перейти
+                            <img src="image/right-arrow.png" alt="arrow">
+                        </a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Адрес 123</h5>
-                        <p class="card-text d-inline-block">Адрес 123</p>
-                        <a href="#" class="card-link small">Перейти</a>
+                    <div class="card-body row">
+                        <h5 class="card-title col-12">Адрес 123</h5>
+                        <p class="card-text col-5 pr-0 mr-0">Адрес 123</p>
+                        <a href="#" class="card-link small col-6">
+                            Перейти
+                            <img src="image/right-arrow.png" alt="arrow">
+                        </a>
                     </div>
                 </div>
             </aside>
-            <section class="general col-xl-9">
+            <aside class="object-small-size d-block d-xs-block d-sm-block d-md-block d-lg-none d-xl-none col-12">
+                <div class="row">
+                        <div class="dropdown show col-12 pt-5">
+                                <a class="btn btn-secondary dropdown-toggle col-12" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Уведомления
+                                </a>
+                              
+                                <div class="dropdown-menu col-12" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item col-12" href="#">Документы</a>
+                                  <a class="dropdown-item col-12" href="#">План</a>
+                                  <a class="dropdown-item col-12" href="#">Оплата</a>
+                                  <a class="dropdown-item col-12" href="#">Стадии</a>
+                                  <a class="dropdown-item col-12" href="#">Online</a>
+                                  <a class="dropdown-item col-12" href="#">Инструкция</a>
+                                </div>
+                              </div>
+                    <div class="card border-0 col-6" style="width: 18rem;">
+                        <div class="card-body row">
+                            <h5 class="card-title col-12">Адрес 123</h5>
+                            <p class="card-text col-5 pr-0 mr-0">Адрес 123</p>
+                            <a href="#" class="card-link small col-6">
+                                Перейти
+                                <img src="image/right-arrow.png" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 col-6" style="width: 18rem;">
+                        <div class="card-body row">
+                            <h5 class="card-title col-12">Адрес 123</h5>
+                            <p class="card-text col-5 pr-0 mr-0">Адрес 123</p>
+                            <a href="#" class="card-link small col-6">
+                                Перейти
+                                <img src="image/right-arrow.png" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="general col-xl-9 col-lg-8">
                 <h2 class="title">Уведомления</h2>
                 <div class="card d-flex">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">"Вращательный экваториальный момент — актуальная национальная задача"</p>
-                        <button class="more-button" id="more-button" type="button" onclick="show1();">
-                            <img class="more" src="image/heart.svg" alt="more">
-                        </button>
-                        <button class="more-button" id="more" type="button" style="display: none;" onclick="show2();">
-                            <img class="more" src="image/green.png" alt="more">
-                        </button>
-                        <p class="paragraf" id="paragraf" style="display: none;">This is someThis is some text within a card body.</p>
+                        <p class="font-weight-bold">"Вращательный экваториальный момент — актуальная национальная задача"
+                            <span class="badge" data-toggle="collapse" data-target="#first-info">
+                                <img class="more" src="image/show-arrow.png" alt="more">
+                            </span>
+                        </p>
+                        <p class="collapse" id="first-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
+                            региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
+                            трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца
+                            подвеса, что не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный
+                            голоцен, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых
+                            нет никакой опоры в объективном мире. Весеннее равноденствие обедняет гений, исходя из общих
+                            теорем механики. Освобождение, несмотря на не менее значительную.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">Реальная власть как концепция</p>
+                        <p class="font-weight-bold">Реальная власть как концепция
+                            <span class="badge" data-toggle="collapse" data-target="#second-info">
+                                <img class="more" src="image/show-arrow.png" alt="more">
+                            </span>
+                        </p>
+                        <p class="collapse" id="second-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
+                            региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
+                            трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца
+                            подвеса, что не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный
+                            голоцен, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых
+                            нет никакой опоры в объективном мире. Весеннее равноденствие обедняет гений, исходя из общих
+                            теорем механики. Освобождение, несмотря на не менее значительную.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">Из ряда вон выходящий математический маятник: гипотеза и теории</p>
+                        <p class="font-weight-bold">Из ряда вон выходящий математический маятник: гипотеза и теории
+                            <span class="badge" data-toggle="collapse" data-target="#third-info">
+                                <img class="more" src="image/show-arrow.png" alt="more">
+                            </span>
+                        </p>
+                        <p class="collapse" id="third-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
+                            региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
+                            трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца
+                            подвеса, что не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный
+                            голоцен, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых
+                            нет никакой опоры в объективном мире. Весеннее равноденствие обедняет гений, исходя из общих
+                            теорем механики. Освобождение, несмотря на не менее значительную.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">Межпланетный знак: методология и особенности</p>
+                        <p class="font-weight-bold">Межпланетный знак: методология и особенности
+                            <span class="badge" data-toggle="collapse" data-target="#fourth-info">
+                                <img class="more" src="image/show-arrow.png" alt="more">
+                            </span>
+                        </p>
+                        <p class="collapse" id="fourth-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
+                            региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
+                            трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца
+                            подвеса, что не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный
+                            голоцен, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых
+                            нет никакой опоры в объективном мире. Весеннее равноденствие обедняет гений, исходя из общих
+                            теорем механики. Освобождение, несмотря на не менее значительную.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <div class="date bg-light text-dark">22/09/17</div>
-                        <p class="font-weight-bold">Юрский маховик: ядро или засветка неба?</p>
+                        <p class="font-weight-bold">Юрский маховик: ядро или засветка неба?
+                            <span class="badge" data-toggle="collapse" data-target="#fifth-info">
+                                <img class="more" src="image/show-arrow.png" alt="more">
+                            </span>
+                        </p>
+                        <p class="collapse" id="fifth-info">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом
+                            региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует
+                            трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца
+                            подвеса, что не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный
+                            голоцен, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых
+                            нет никакой опоры в объективном мире. Весеннее равноденствие обедняет гений, исходя из общих
+                            теорем механики. Освобождение, несмотря на не менее значительную.</p>
                     </div>
                 </div>
             </section>
         </div>
     </section>
 
-    <section class="news container-fluid d-flex justify-content-center d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
+    <section class="news container-fluid justify-content-center d-none d-xs-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
         <div class="overflow row d-flex flex-nowrap">
             <div class="card d-inline-block" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title d-inline-block text-muted">14/07</h5>
-                    <div class="background align-middle"></div>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="background actionalign-middle"></div>
+                    <p class="card-text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
                 </div>
             </div>
             <div class="card d-inline-block" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title d-inline-block text-muted">14/07</h5>
-                    <div class="background align-middle"></div>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="background new align-middle"></div>
+                    <p class="card-text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
                 </div>
             </div>
             <div class="card d-inline-block" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title d-inline-block text-muted">14/07</h5>
-                    <div class="background align-middle"></div>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="background shares align-middle"></div>
+                    <p class="card-text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
                 </div>
             </div>
             <div class="card d-inline-block" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title d-inline-block text-muted">14/07</h5>
-                    <div class="background align-middle"></div>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="background events align-middle"></div>
+                    <p class="card-text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
                 </div>
             </div>
         </div>
@@ -205,8 +301,8 @@
                     <div class="card d-inline-block w-100">
                         <div class="card-body">
                             <h5 class="card-title d-inline-block text-muted">14/07</h5>
-                            <div class="background align-middle"></div>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="background action align-middle"></div>
+                            <p class="card-text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
                         </div>
                     </div>
                 </div>
@@ -214,8 +310,8 @@
                     <div class="card d-inline-block w-100">
                         <div class="card-body">
                             <h5 class="card-title d-inline-block text-muted">14/07</h5>
-                            <div class="background align-middle"></div>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="background new align-middle"></div>
+                            <p class="card-text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
                         </div>
                     </div>
                 </div>
@@ -223,8 +319,8 @@
                     <div class="card d-inline-block w-100">
                         <div class="card-body">
                             <h5 class="card-title d-inline-block text-muted">14/07</h5>
-                            <div class="background align-middle"></div>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="background shares align-middle"></div>
+                            <p class="card-text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
                         </div>
                     </div>
                 </div>
@@ -232,8 +328,8 @@
                     <div class="card d-inline-block w-100">
                         <div class="card-body">
                             <h5 class="card-title d-inline-block text-muted">14/07</h5>
-                            <div class="background align-middle"></div>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="background events align-middle"></div>
+                            <p class="card-text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
                         </div>
                     </div>
                 </div>
@@ -243,7 +339,7 @@
 
     <footer class="footer container">
         <div class="row">
-            <aside class="contacts col-xl-3 col-md-3">
+            <aside class="contacts col-xl-3 col-lg-3 col-md-4">
                 <div class="social-icon">
                     <a class="icon fb" href="#"></a>
                     <a class="icon vk" href="#"></a>
@@ -254,14 +350,14 @@
                 <div class="adress">
                     <p class="lead">+7 000 000-00-00</p>
                     <p class="small">Адрес, улица, дом, корпус</p>
-                    <p class="small">post@comp.com</p>
+                    <p class="small email">post@comp.com</p>
                 </div>
             </aside>
-            <section class="nav col-xl-8 col-md-8 d-sm-none d-md-block">
+            <section class="nav col-xl-8 col-md-7 d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
                 <div class="row">
-                    <div class="col-xl-3">
-                        <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №1</p>
-                        <ul class="list-group list-unstyled d-inline-block align-top">
+                    <div class="col-xl-3 col-lg-3 col-md-6 pb-5">
+                        <p class="title font-weight-bold d-inline col-3">Раздел №1</p>
+                        <ul class="list-group list-unstyled d-inline-block mt-3">
                             <li>
                                 <a href="#">Подраздел №1</a>
                             </li>
@@ -282,9 +378,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-3">
-                        <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №2</p>
-                        <ul class="list-group list-unstyled d-inline-block align-top">
+                    <div class="col-xl-3 col-lg-3 col-md-6 pb-5">
+                        <p class="title font-weight-bold d-inline col-3">Раздел №2</p>
+                        <ul class="list-group list-unstyled d-inline-block mt-3">
                             <li>
                                 <a href="#">Подраздел №1</a>
                             </li>
@@ -299,9 +395,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-3">
-                        <p class="title font-weight-bold d-inline-block col-xl-3">Раздел №3</p>
-                        <ul class="list-group list-unstyled d-inline-block align-top">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <p class="title font-weight-bold d-inline col-3">Раздел №3</p>
+                        <ul class="list-group list-unstyled d-inline-block mt-3">
                             <li>
                                 <a href="#">Подраздел №1</a>
                             </li>
@@ -322,8 +418,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-3">
-                        <ul class="list-group list-unstyled d-inline-block align-top">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <ul class="list-group list-unstyled d-inline-block mt-3">
                             <li>
                                 <a href="#">Подраздел №1</a>
                             </li>
@@ -337,17 +433,12 @@
                     </div>
                 </div>
             </section>
-            <section class="nav-small-size d-sm-block d-md-none col-12">
+            <section class="nav-small-size d-block d-xs-block d-sm-block d-md-none d-lg-none d-xl-none col-12">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0 pr-0">
                         Cras justo odio
-                        <button class="show" id="show" type="button" onclick="show3();">
-                            <span class="oi" data-glyph="chevron-bottom"></span>
-                        </button>
-                        <button class="hide" id="hide" type="button" style="display: none;" onclick="show4();">
-                            <span class="oi" data-glyph="chevron-top"></span>
-                        </button>
-                        <ul class="subsection list-unstyled" id="subsection" style="display: none;">
+                        <span class="oi" data-glyph="chevron-bottom" data-toggle="collapse" data-target="#first-section"></span>
+                        <ul class="subsection collapse list-unstyled" id="first-section">
                             <li>
                                 <a href="#">Подраздел №1</a>
                             </li>
@@ -368,15 +459,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0 pr-0">
                         Dapibus ac facilisis in
-                        <button class="show" id="show" type="button" onclick="show3();">
-                            <span class="oi" data-glyph="chevron-bottom"></span>
-                        </button>
-                        <button class="hide" id="hide" type="button" style="display: none;" onclick="show4();">
-                            <span class="oi" data-glyph="chevron-top"></span>
-                        </button>
-                        <ul class="subsection list-unstyled" id="subsection" style="display: none;">
+                        <span class="oi" data-glyph="chevron-bottom" data-toggle="collapse" data-target="#second-section"></span>
+                        <ul class="subsection collapse list-unstyled" id="second-section">
                             <li>
                                 <a href="#">Подраздел №1</a>
                             </li>
@@ -391,15 +477,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0 pr-0">
                         Morbi leo risus
-                        <button class="show" id="show" type="button" onclick="show3();">
-                            <span class="oi" data-glyph="chevron-bottom"></span>
-                        </button>
-                        <button class="hide" id="hide" type="button" style="display: none;" onclick="show4();">
-                            <span class="oi" data-glyph="chevron-top"></span>
-                        </button>
-                        <ul class="subsection list-unstyled" id="subsection" style="display: none;">
+                        <span class="oi" data-glyph="chevron-bottom" data-toggle="collapse" data-target="#third-section"></span>
+                        <ul class="subsection collapse list-unstyled" id="third-section">
                             <li>
                                 <a href="#">Подраздел №1</a>
                             </li>
@@ -424,32 +505,6 @@
             </section>
         </div>
     </footer>
-
-    <script>
-        function show1() {
-            document.getElementById('paragraf').style.display = 'block';
-            document.getElementById('more').style.display = 'block';
-            document.getElementById('more-button').style.display = 'none';
-        }
-
-        function show2() {
-            document.getElementById('paragraf').style.display = 'none';
-            document.getElementById('more').style.display = 'none';
-            document.getElementById('more-button').style.display = 'block';
-        }
-
-        function show3() {
-            document.getElementById('subsection').style.display = 'block';
-            document.getElementById('hide').style.display = 'block';
-            document.getElementById('show').style.display = 'none';
-        }
-
-        function show4() {
-            document.getElementById('subsection').style.display = 'none';
-            document.getElementById('hide').style.display = 'none';
-            document.getElementById('show').style.display = 'block';
-        }
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

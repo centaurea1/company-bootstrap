@@ -1,14 +1,32 @@
+body {
+    min-width: 640px;
+}
+
 .header .navbar {
     padding: 0 40px;
 }
 
-.header .navbar .lead {
-    margin-right: 20px;
+.header .navbar-nav .nav-link {
+    font-size: 14px;
+    color: #893b67;
+}
+
+.header .navbar .badge-danger {
+    background: #893b67;
+}
+
+.header .navbar-nav .dropdown .btn {
+    font-size: 14px;
 }
 
 .header .dropdown-toggle {
     border-radius: 30px;
     border: 1px solid #cccccc;
+}
+
+.header .position-absolute {
+    bottom: 0;
+    left: 0;
 }
 
 .main .object .name,
@@ -33,13 +51,17 @@
     border: none;
 }
 
-.main .object {
-    position: relative;
-    top: -70px;
-}
-
 .main .object .list-group {
     margin-top: 40px;
+}
+
+.main .object .list-group a {
+    color: #893b67;
+}
+
+.main .object .card-link,
+.main .object-small-size .card-link {
+    color: #893b67;
 }
 
 .main .general .title {
@@ -82,11 +104,27 @@
     display: inline-block;
     width: 70px;
     height: 20px;
-    background: url('../image/green.png') no-repeat;
+    background: url('../image/sprite-news.png') no-repeat;
 }
 
-.footer .contacts {
-    margin-right: 20px;
+.news .card .action,
+.news-small-size .card .action {
+    background-position: 0 0;
+}
+
+.news .card .new,
+.news-small-size .card .new {
+    background-position: 40% 0;
+}
+
+.news .card .shares,
+.news-small-size .card .shares {
+    background-position: 70% 0;
+}
+
+.news .card .events,
+.news-small-size .card .events {
+    background-position: 100% 0;
 }
 
 .footer {
@@ -145,6 +183,15 @@
 
 .footer .nav-small-size .dropdown {
     border-bottom: 1px solid #cccccc;
+}
+
+.footer .adress .email {
+    color: #893b67;
+}
+
+.footer .nav .empty {
+    width: 20px;
+    height: 20px;
 }
 
 .icon {
