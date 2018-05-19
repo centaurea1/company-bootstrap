@@ -28,6 +28,18 @@ body {
     border: 1px solid #cccccc;
 }
 
+.header .nav-link,
+.header .lead {
+    white-space: nowrap;
+}
+
+.header .img {
+    width: 100%;
+    height: 230px;
+    background: url('../image/banner.jpg') no-repeat;
+    background-position: top center;
+}
+
 .main .object .name,
 .object .subname {
     margin-bottom: 0;
@@ -124,6 +136,11 @@ body {
 .news .card .events,
 .news-small-size .card .events {
     background-position: 100% 0;
+}
+
+.news-small-size .carousel li {
+    width: 10px;
+    height: 10px;
 }
 
 .footer {
