@@ -1,5 +1,26 @@
+@font-face {
+    font-family: 'Vida Pro 31';
+    src: url('Vida31Pro.eot');
+    src: url('Vida31Pro.eot?#iefix') format('embedded-opentype'),
+    url('Vida31Pro.woff') format('woff'),
+    url('Vida31Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Vida Pro 33';
+    src: url('Vida33Pro.eot');
+    src: url('Vida33Pro.eot?#iefix') format('embedded-opentype'),
+    url('Vida33Pro.woff') format('woff'),
+    url('Vida33Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     min-width: 640px;
+    font-family: 'Vida Pro 31';
 }
 
 .header .navbar {
@@ -7,6 +28,7 @@ body {
 }
 
 .header .navbar-nav .nav-link {
+    font-family: 'Vida Pro 33';
     font-size: 12px;
     color: #893b67;
 }
@@ -40,10 +62,13 @@ body {
     background-position: top center;
 }
 
-.main .object .name,
-.object .subname {
-    margin-bottom: 0;
-    padding-top: 5px;
+.header .name {
+    font-family: 'Vida Pro 33';
+    color: #414141;
+}
+
+.header .subname {
+    color: #777b80;
 }
 
 .main {
@@ -73,6 +98,10 @@ body {
 .main .object .card-link,
 .main .object-small-size .card-link {
     color: #893b67;
+}
+
+.main .general .info {
+    color: #5a5a58;
 }
 
 .main .general .title {
